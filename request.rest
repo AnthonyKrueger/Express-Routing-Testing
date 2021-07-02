@@ -1,0 +1,53 @@
+POST http://localhost:3001/api/owners
+Content-Type: application/json
+
+{
+    "firstName": "Anthony",
+    "lastName": "Krueger",
+    "age": 1
+}
+
+
+###
+
+POST http://localhost:3001/api/manufacturers
+Content-Type: application/json
+
+{
+    "name": "Hyundai"
+}
+
+###
+
+POST http://localhost:3001/api/cars
+Content-Type: application/json
+
+{
+    "model": "Accent",
+    "manufacturer_id": 3
+}
+
+
+###
+
+POST http://localhost:3001/api/individualcars
+Content-Type: application/json
+
+{
+    "color": "Gray",
+    "year": "2011",
+    "vin": "1234556342343",
+    "carId": 3,
+    "ownerId": 3
+}
+
+###
+
+GET http://localhost:3001/api/individualcars
+
+
+###
+
+GET http://localhost:3001/api/cars
+
+
