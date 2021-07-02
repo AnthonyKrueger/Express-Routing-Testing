@@ -1,16 +1,16 @@
-POST http://localhost:3001/api/owners
+POST https://flannel-hockey-38964.herokuapp.com/api/owners
 Content-Type: application/json
 
 {
-    "firstName": "Anthony",
-    "lastName": "Krueger",
-    "age": 1
+    "firstName": "Zoe",
+    "lastName": "Manning",
+    "age": 21
 }
 
 
 ###
 
-POST http://localhost:3001/api/manufacturers
+POST https://flannel-hockey-38964.herokuapp.com/api/manufacturers
 Content-Type: application/json
 
 {
@@ -19,35 +19,35 @@ Content-Type: application/json
 
 ###
 
-POST http://localhost:3001/api/cars
+POST https://flannel-hockey-38964.herokuapp.com/api/cars
 Content-Type: application/json
 
 {
     "model": "Accent",
-    "manufacturer_id": 3
+    "manufacturer_id": 1
 }
 
 
 ###
 
-POST http://localhost:3001/api/individualcars
+POST https://flannel-hockey-38964.herokuapp.com/api/individualcars
 Content-Type: application/json
 
 {
-    "color": "Gray",
+    "color": "Blue",
     "year": "2011",
     "vin": "1234556342343",
-    "carId": 3,
-    "ownerId": 3
+    "carId": 1,
+    "ownerId": 1
 }
 
 ###
 
-GET http://localhost:3001/api/individualcars
+GET https://flannel-hockey-38964.herokuapp.com/api/individualcars
 
 
 ###
 
-GET http://localhost:3001/api/cars
+GET http://localhost:3001/
 
 
