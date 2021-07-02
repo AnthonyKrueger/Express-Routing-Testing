@@ -4,7 +4,7 @@ const path = require('path')
 
 router.use('/api', apiRoutes);
 
-router.get('/', async (req, res) => {
+router.get('/', (req, res) => {
     try {
         res.status(200).sendFile(path.join(__dirname, '../html/index.html'))
     }
